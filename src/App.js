@@ -1,5 +1,6 @@
 // src/App.js
 import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import Navbar from "./components/Navbar";
 import RegistrationForm from "./components/RegistrationForm";
 import Home from "./components/Home";
