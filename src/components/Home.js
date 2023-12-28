@@ -10,7 +10,7 @@ const Home = () => {
                     <h2 className="mt-4 text-center" style={{ color: 'orangered', fontSize: '40px' }}>
                         IT COMP
                         <br />
-                        
+                        Fusion of Art & Technology
                     </h2>
                     <div className="text-center">
                         <a
