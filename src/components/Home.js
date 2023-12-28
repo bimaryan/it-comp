@@ -89,7 +89,7 @@ const Home = () => {
                     Berapa jumlah hadiah yang disediakan?
                 </h2>
             </div>
-            <section id="5" className="mt-5">
+            <section id="6" className="mt-5">
                 <div className="container">
                     <div className="card">
                         <div className="card-body">
@@ -145,7 +145,7 @@ const Home = () => {
                     Apa topik yang dibahas dalam setiap kategori lombanya?
                 </h2>
             </div>
-            <section id="5" className="mt-5">
+            <section id="7" className="mt-5">
                 <div className="container">
                     <div className="card">
                         <div className="card-body">
@@ -185,7 +185,7 @@ const Home = () => {
                     TimeLine perlombaan
                 </h2>
             </div>
-            <section id="5" className="mt-5">
+            <section id="8" className="mt-5">
                 <div className="container">
                     <div className="card">
                         <div className="card-body">
