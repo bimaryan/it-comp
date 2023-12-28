@@ -12,11 +12,15 @@ const Home = () => {
                         <br />
                         Election Hackathon 2023
                     </h2>
-                    <div className="card shadow mt-4 fw-bold" style={{ width: '70%', margin: '0 auto' }}>
-                        <div className="card-body">
-                            <img src=""
-                                alt="" className="card-img-top" />
-                        </div>
+                    <div className="text-center">
+                        <a
+                            className="btn text-white shadow mt-4 fw-bold"
+                            style={{ background: 'orangered', textDecoration: 'none', padding: '10px 20px', borderRadius: '5px' }}
+                            href="/regist"
+                        >
+                            Daftar Sekarang
+                        </a>
+
                     </div>
                 </div>
             </section>
