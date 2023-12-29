@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { signOut, onAuthStateChanged } from 'firebase/auth'; // Import onAuthStateChanged
+import { auth } from '../firebase';
+import { useNavigate } from 'react-router-dom';
 import {
     MDBContainer,
     MDBNavbar,
@@ -13,6 +16,27 @@ import {
 
 const Navbar = () => {
     const [openNavRight, setOpenNavRight] = useState(false);
+    const [user, setUser] = useState(null);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // Listen for changes in authentication status
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            setUser(user);
+        });
+
+        // Cleanup the listener on unmount
+        return () => unsubscribe();
+    }, []);
+
+    const handleLogout = async () => {
+        try {
+            await signOut(auth);
+            navigate('/');
+        } catch (error) {
+            console.error('Error signing out', error);
+        }
+    };
 
     return (
         <MDBNavbar expand='lg' light bgColor='light'>
@@ -35,16 +59,16 @@ const Navbar = () => {
                                 Home
                             </MDBNavbarLink>
                         </MDBNavbarItem>
-                        {/* <MDBNavbarItem>
-                            <MDBNavbarLink href='/itcomp2024'>IT-Comp 2024</MDBNavbarLink>
-                        </MDBNavbarItem>
-
-                        <MDBNavbarItem>
-                            <MDBNavbarLink href='/itcompinternal2024'>IT-Comp Internal 2024</MDBNavbarLink>
-                        </MDBNavbarItem> */}
                         <MDBNavbarItem>
                             <MDBNavbarLink href='/regist'>Pendaftaran</MDBNavbarLink>
                         </MDBNavbarItem>
+                        {user ? (
+                            <MDBNavbarItem>
+                                <MDBNavbarLink onClick={handleLogout} className="text-danger">
+                                    Logout
+                                </MDBNavbarLink>
+                            </MDBNavbarItem>
+                        ) : null}
                     </MDBNavbarNav>
                 </MDBCollapse>
             </MDBContainer>
