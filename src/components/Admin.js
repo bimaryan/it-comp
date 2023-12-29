@@ -49,7 +49,7 @@ const Admin = () => {
             <div className='card mt-4'>
                 <div className='card-header text-center fw-bold fs-3'>Daftar peserta IT-COMP</div>
                 <div className='card-body'>
-                    <div className='mb-3'>
+                    <div className='mb-1'>
                         <button className='btn btn-success' onClick={handleExportToExcel}>
                             Export to Excel
                         </button>
