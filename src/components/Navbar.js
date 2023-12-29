@@ -32,7 +32,7 @@ const Navbar = () => {
     const handleLogout = async () => {
         try {
             await signOut(auth);
-            navigate('/');
+            navigate('/login');
         } catch (error) {
             console.error('Error signing out', error);
         }
