@@ -4,6 +4,7 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { onAuthStateChanged } from 'firebase/auth'; // Import onAuthStateChanged
 import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
+import { exportExcel } from './ExcelExporter';
 
 const Admin = () => {
     const [userData, setUserData] = useState([]);
@@ -28,6 +29,10 @@ const Admin = () => {
         fetchData();
     }, []);
 
+    const handleExportToExcel = () => {
+        exportExcel(userData);
+    };
+
     useEffect(() => {
         const authStateChanged = onAuthStateChanged(auth, (user) => {
             if (!user) {
@@ -44,11 +49,16 @@ const Admin = () => {
             <div className='card mt-4'>
                 <div className='card-header text-center fw-bold fs-3'>Daftar peserta IT-COMP</div>
                 <div className='card-body'>
+                    <div className='mb-3'>
+                        <button className='btn btn-success' onClick={handleExportToExcel}>
+                            Export to Excel
+                        </button>
+                    </div>
                     {loading ? (
                         <p>Loading data...</p>
                     ) : (
                         <div className='table-responsive'>
-                            <table className="table">
+                            <table className="table" id="exportTable">
                                 <thead>
                                     <tr className='text-center'>
                                         <th>ID</th>
