@@ -62,9 +62,6 @@ const Navbar = () => {
                         <MDBNavbarItem>
                             <MDBNavbarLink href='/kompetisi/itcomp'>IT-COMP</MDBNavbarLink>
                         </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink href='/Kompetisi/itcomp/registrasi'>Pendaftaran</MDBNavbarLink>
-                        </MDBNavbarItem>
                         {user ? (
                             <MDBNavbarItem>
                                 <MDBNavbarLink onClick={handleLogout} className="text-danger">
