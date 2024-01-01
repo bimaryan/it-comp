@@ -73,7 +73,7 @@ const RegistrationForm = () => {
         <>
             <div className="container mt-5">
                 <form onSubmit={handleSubmit} className="p-4 max-w-2xl mx-auto bg-white rounded-md shadow">
-                    <h2 className="text-center mb-4 text-xl font-bold text-gray-900 dark:text-white" style={{color: 'orangered'}}>Pendaftaran IT-COMP</h2>
+                    <h2 className="text-center mb-4 text-xl font-bold text-gray-900 dark:text-white" style={{ color: 'orangered' }}>Pendaftaran IT-COMP</h2>
 
                     <div className="mb-3">
                         <MDBInput
@@ -137,11 +137,13 @@ const RegistrationForm = () => {
                             onChange={handleFileChange}
                             multiple
                             required
+                            accept=".jpg, .jpeg, .png" // Specify allowed file types
                         />
+                        <small className="text-muted">Maximum file size: 5 MB. Allowed file types: JPG, JPEG, PNG</small>
                     </div>
 
                     <div className="mb-3">
-                        <MDBBtn type="submit" className="w-100 text-white px-4 py-2 rounded-md" style={{background: 'orangered'}}>
+                        <MDBBtn type="submit" className="w-100 text-white px-4 py-2 rounded-md" style={{ background: 'orangered' }}>
                             Daftar Lomba
                         </MDBBtn>
                     </div>
