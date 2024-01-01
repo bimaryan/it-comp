@@ -17,12 +17,12 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/Kompetisi" element={<Kompetisi />} />
+          <Route path="/kompetisi/itcomp" element={<Kompetisi />} />
           <Route path="/" element={<ComingSoon />} />
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/regist" element={<RegistrationForm />} />
+          <Route path="/Kompetisi/itcomp/registrasi" element={<RegistrationForm />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

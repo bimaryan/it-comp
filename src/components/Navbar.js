@@ -60,7 +60,10 @@ const Navbar = () => {
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <MDBNavbarLink href='/regist'>Pendaftaran</MDBNavbarLink>
+                            <MDBNavbarLink href='/kompetisi/itcomp'>IT-COMP</MDBNavbarLink>
+                        </MDBNavbarItem>
+                        <MDBNavbarItem>
+                            <MDBNavbarLink href='/Kompetisi/itcomp/registrasi'>Pendaftaran</MDBNavbarLink>
                         </MDBNavbarItem>
                         {user ? (
                             <MDBNavbarItem>

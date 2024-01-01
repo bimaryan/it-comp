@@ -16,7 +16,7 @@ const Kompetisi = () => {
                         <a
                             className="btn text-white shadow mt-4 fw-bold"
                             style={{ background: 'orangered', textDecoration: 'none', padding: '10px 20px', borderRadius: '5px' }}
-                            href="/regist"
+                            href="/kompetisi/itcomp/registrasi"
                         >
                             Daftar Sekarang
                         </a>
