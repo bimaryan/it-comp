@@ -41,7 +41,15 @@ const Navbar = () => {
     return (
         <MDBNavbar expand='lg' light bgColor='light'>
             <MDBContainer fluid>
-                <MDBNavbarBrand href='/'>Himatif Polindra</MDBNavbarBrand>
+                <MDBNavbarBrand href='/'>
+                    <img
+                        src='http://localhost:3000/img/logo.jpeg'
+                        height='30'
+                        alt=''
+                        loading='lazy'
+                    />
+                    Himatif Polindra
+                </MDBNavbarBrand>
 
                 <MDBNavbarToggler
                     aria-controls='navbarSupportedContent'
