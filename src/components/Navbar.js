@@ -43,7 +43,7 @@ const Navbar = () => {
             <MDBContainer fluid>
                 <MDBNavbarBrand href='/'>
                     <img
-                        src='http://localhost:3000/img/logo.jpeg'
+                        src='../img/logo.jpeg'
                         height='30'
                         alt=''
                         loading='lazy'
