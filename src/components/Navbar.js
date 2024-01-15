@@ -43,7 +43,7 @@ const Navbar = () => {
             <MDBContainer fluid>
                 <MDBNavbarBrand href='/'>
                     <img
-                        src='../img/logo.jpeg'
+                        src='himatifpolindra.vercel.app/img/logo.jpeg'
                         height='30'
                         alt=''
                         loading='lazy'
