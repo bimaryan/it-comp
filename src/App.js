@@ -22,7 +22,7 @@ const App = () => {
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/Kompetisi/itcomp/registrasi" element={<RegistrationForm />} />
+          {/*<Route path="/Kompetisi/itcomp/registrasi" element={<RegistrationForm />} />*/}
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
