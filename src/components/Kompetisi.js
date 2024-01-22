@@ -16,7 +16,7 @@ const Kompetisi = () => {
                         <a
                             className="btn text-white shadow mt-4 fw-bold"
                             style={{ background: 'orangered', textDecoration: 'none', padding: '10px 20px', borderRadius: '5px' }}
-                            href="/kompetisi/itcomp/registrasi"
+                            href="https://forms.gle/bSkQHvPRVvLNkBjq7"
                         >
                             Daftar Sekarang
                         </a>
@@ -104,17 +104,17 @@ const Kompetisi = () => {
                                     <div className="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
                                         <div className="card">
                                             <div className="card-body">
-                                                <i className="bi bi-trophy"></i> Juara 1 : Rp. 350.000 + sertifikat
+                                                <i className="bi bi-trophy"></i> Juara 1 : Rp. 500.000 + sertifikat
                                             </div>
                                         </div>
                                         <div className="card">
                                             <div className="card-body">
-                                                <i className="bi bi-trophy"></i> Juara 2 : Rp. 250.000 + sertifikat
+                                                <i className="bi bi-trophy"></i> Juara 2 : Rp. 400.000 + sertifikat
                                             </div>
                                         </div>
                                         <div className="card">
                                             <div className="card-body">
-                                                <i className="bi bi-trophy"></i> Juara 3 : Rp. 150.000 + sertifikat
+                                                <i className="bi bi-trophy"></i> Juara 3 : Rp. 300.000 + sertifikat
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@ const Kompetisi = () => {
                                         </div>
                                         <div className="card">
                                             <div className="card-body">
-                                                <i className="bi bi-trophy"></i> Juara 3 : Rp. 150.000 + sertifikat
+                                                <i className="bi bi-trophy"></i> Juara 3 : Rp. 200.000 + sertifikat
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@ const Kompetisi = () => {
                     <div className="card">
                         <div className="card-body">
                             Topik yang dibahas dalam IT COMP pada setiap kategori lombanya adalah sebagai berikut :
-                            <div className="row row-cols-1 row-cols-md-2 g-3 justify-content-center mt-1">
+                            <div className="row row-cols-1 row-cols-md-2 g-4 justify-content-center mt-1">
                                 <div className="card">
                                     <div className="card-header">
                                         <b>Design UI/UX</b>
@@ -196,20 +196,20 @@ const Kompetisi = () => {
                             <ul className="timeline">
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Open Registration</h5>
-                                    <p className="text-muted">4 Januari 2024</p>
+                                    <span className="text-muted">4 Januari 2024</span>
                                 </li>
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Close Registration and Technical meeting</h5>
-                                    <p className="text-muted">H - 3 Seminar</p>
+                                    <span className="text-muted">H - 3 Seminar</span>
                                 </li>
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Waktu pelaksanaan lomba pada tanggal</h5>
-                                    <p className="text-muted">25 -26 Januari 2024</p>
+                                    <span className="text-muted">25 -26 Januari 2024</span>
                                 </li>
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Pengumuman pemenang Desain UI/UX & Olimpiade IT</h5>
-                                    <p className="text-muted">25 - 26 Januari 2024</p>
-                                    <p className="text-muted">setelah seluruh peserta menyelesaikan presentasi </p>
+                                    <span className="text-muted">25 - 26 Januari 2024</span><br/>
+                                    <span className="text-muted">setelah seluruh peserta menyelesaikan presentasi </span>
                                 </li>
                             </ul>
                         </div>

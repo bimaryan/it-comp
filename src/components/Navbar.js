@@ -62,14 +62,14 @@ const Navbar = () => {
 
                 <MDBCollapse navbar open={openNavRight}>
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
-                        <MDBNavbarItem>
+                        {/* <MDBNavbarItem>
                             <MDBNavbarLink active aria-current='page' href='/'>
                                 Home
                             </MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
+                        </MDBNavbarItem> */}
+                        {/* <MDBNavbarItem>
                             <MDBNavbarLink href='/kompetisi/itcomp'>IT-COMP</MDBNavbarLink>
-                        </MDBNavbarItem>
+                        </MDBNavbarItem> */}
                         {user ? (
                             <MDBNavbarItem>
                                 <MDBNavbarLink onClick={handleLogout} className="text-danger">
