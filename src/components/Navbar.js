@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { signOut, onAuthStateChanged } from 'firebase/auth'; // Import onAuthStateChanged
+import { signOut, onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -20,12 +20,10 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Listen for changes in authentication status
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setUser(user);
         });
 
-        // Cleanup the listener on unmount
         return () => unsubscribe();
     }, []);
 
@@ -37,9 +35,8 @@ const Navbar = () => {
             console.error('Error signing out', error);
         }
     };
-
     return (
-        <MDBNavbar expand='lg' light bgColor='light'>
+        <MDBNavbar expand='lg'>
             <MDBContainer fluid>
                 <MDBNavbarBrand href='/'>
                     <img
@@ -62,14 +59,6 @@ const Navbar = () => {
 
                 <MDBCollapse navbar open={openNavRight}>
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
-                        {/* <MDBNavbarItem>
-                            <MDBNavbarLink active aria-current='page' href='/'>
-                                Home
-                            </MDBNavbarLink>
-                        </MDBNavbarItem> */}
-                        {/* <MDBNavbarItem>
-                            <MDBNavbarLink href='/kompetisi/itcomp'>IT-COMP</MDBNavbarLink>
-                        </MDBNavbarItem> */}
                         {user ? (
                             <MDBNavbarItem>
                                 <MDBNavbarLink onClick={handleLogout} className="text-danger">

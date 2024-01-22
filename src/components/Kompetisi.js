@@ -1,4 +1,3 @@
-import React from "react";
 import '../App.css';
 
 const Kompetisi = () => {
@@ -189,7 +188,7 @@ const Kompetisi = () => {
                     TimeLine perlombaan
                 </h2>
             </div>
-            <section id="8" className="mt-5">
+            <section id="8" className="mt-5 mb-5">
                 <div className="container">
                     <div className="card">
                         <div className="card-body">
@@ -208,7 +207,7 @@ const Kompetisi = () => {
                                 </li>
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Pengumuman pemenang Desain UI/UX & Olimpiade IT</h5>
-                                    <span className="text-muted">28 - 29 Februari 2024</span><br/>
+                                    <span className="text-muted">28 - 29 Februari 2024</span><br />
                                     <span className="text-muted">setelah seluruh peserta menyelesaikan presentasi </span>
                                 </li>
                             </ul>
