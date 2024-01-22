@@ -196,19 +196,19 @@ const Kompetisi = () => {
                             <ul className="timeline">
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Open Registration</h5>
-                                    <span className="text-muted">4 Januari 2024</span>
+                                    <span className="text-muted">10 Januari 2024</span>
                                 </li>
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Close Registration and Technical meeting</h5>
-                                    <span className="text-muted">H - 3 Seminar</span>
+                                    <span className="text-muted">19 Februari 2024</span>
                                 </li>
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Waktu pelaksanaan lomba pada tanggal</h5>
-                                    <span className="text-muted">25 -26 Januari 2024</span>
+                                    <span className="text-muted">28 - 29 Februari 2024</span>
                                 </li>
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Pengumuman pemenang Desain UI/UX & Olimpiade IT</h5>
-                                    <span className="text-muted">25 - 26 Januari 2024</span><br/>
+                                    <span className="text-muted">28 - 29 Februari 2024</span><br/>
                                     <span className="text-muted">setelah seluruh peserta menyelesaikan presentasi </span>
                                 </li>
                             </ul>
