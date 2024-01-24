@@ -3,7 +3,8 @@ import '../App.css';
 
 const Kompetisi = () => {
     const [loading, setLoading] = useState(true);
-    const Uximage = '../img/ux.png';
+    const Uximage = '../img/pc.png';
+    const Kertasimage = '../img/kertas.png';
 
     useEffect(() => {
         // Simulate loading delay
@@ -67,12 +68,18 @@ const Kompetisi = () => {
                         <div className="container">
                             <div className="card">
                                 <div className="card-header">
-                                    <span className="fs-5 fw-bold">kami menyediakan 2 kategori lomba yaitu:</span>
+                                    <span className="fs-5 fw-bold">Kami menyediakan 2 kategori lomba yaitu:</span>
                                 </div>
                                 <div className="card-body">
                                     <div className="row row-cols-2 g-4 justify-content-center">
-                                        <img src={Uximage} className="img-fluid mx-auto" style={{ width: '200px' }} alt="gambar ui/ux" />
-                                        <img src={Uximage} className="img-fluid mx-auto" style={{ width: '200px' }} alt="olimpiade IT" />
+                                        <div className="col text-center">
+                                            <img src={Uximage} className="img-fluid mx-auto" style={{ width: '200px' }} alt="gambar ui/ux" />
+                                            <p className="mt-2">Desain UI/UX</p>
+                                        </div>
+                                        <div className="col text-center">
+                                            <img src={Kertasimage} className="img-fluid mx-auto" style={{ width: '200px' }} alt="olimpiade IT" />
+                                            <p className="mt-2">Olimpiade IT</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
