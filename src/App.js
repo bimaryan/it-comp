@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 // import RegistrationForm from "./components/RegistrationForm";
 import Kompetisi from "./components/Kompetisi";
 // import Admin from './components/Admin';
-import Hacker from './components/Hacker';
 // import ComingSoon from './components/ComingSoon';
 import Login from './components/Login';
 import Footer from "./components/Footer";
@@ -23,7 +22,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Kompetisi />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/hacker" element={<Hacker />} />
           {/* <Route path="/admin" element={<Admin />} /> */}
           {/* <Route path="/Kompetisi/itcomp/registrasi" element={<RegistrationForm />} /> */}
           <Route path="*" element={<NotFound />} />
