@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Kompetisi from "./components/Kompetisi";
 import Admin from './components/Admin';
 // import Home from './components/Home';
-// import ComingSoon from './components/ComingSoon';
+import ComingSoon from './components/ComingSoon';
 import Login from './components/Login';
 import Footer from "./components/Footer";
 import NotFound from './components/NotFound';
