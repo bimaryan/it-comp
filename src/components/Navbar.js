@@ -12,7 +12,7 @@ const Navbar = () => {
         <MDBNavbar expand='lg'>
             <MDBContainer fluid>
                 <a className="nav-link text-center" href='/'>
-                    Bimz
+                    Himatif Polindra
                 </a>
 
                 <MDBCollapse navbar open={openNavRight}>
