@@ -17,7 +17,7 @@ const Login = () => {
         try {
             await signInWithEmailAndPassword(auth, email, password);
             // Redirect to the admin page after successful login
-            navigate('/admin');
+            navigate('/');
         } catch (error) {
             setError(error.message);
         }
