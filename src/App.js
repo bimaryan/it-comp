@@ -10,8 +10,12 @@ import Admin from './components/Admin';
 import Login from './components/Login';
 import Footer from "./components/Footer";
 import NotFound from './components/NotFound';
+import ReactGA from 'react-ga';
 
 const App = () => {
+  ReactGA.initialize('G-9TTERL4MZN');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <div>
       <Router>

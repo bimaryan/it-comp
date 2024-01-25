@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactGA from 'react-ga';
 import '../App.css';
 
 const Kompetisi = () => {
@@ -10,9 +11,10 @@ const Kompetisi = () => {
         // Simulate loading delay
         const timeout = setTimeout(() => {
             setLoading(false);
-        }, 3000); // Adjust the delay as needed
+        }, 3000);
 
-        // Cleanup the timeout on component unmount
+        ReactGA.pageview(window.location.pathname + window.location.search);
+
         return () => clearTimeout(timeout);
     }, []);
     return (
@@ -223,7 +225,7 @@ const Kompetisi = () => {
                                             <span className="text-muted">19 Februari 2024</span>
                                         </li>
                                         <li className="timeline-item mb-5">
-                                            <h5 className="fw-bold">Waktu pelaksanaan lomba pada tanggal</h5>
+                                            <h5 className="fw-bold">Waktu pelaksanaan lomba</h5>
                                             <span className="text-muted">28 - 29 Februari 2024</span>
                                         </li>
                                         <li className="timeline-item mb-5">
