@@ -21,8 +21,8 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/kompetisi/itcomp" element={<Kompetisi />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Kompetisi />} />
+          <Route path="/bimz" element={<Home />} />
           <Route path="/login" element={<Login />} />
           {/* <Route path="/admin" element={<Admin />} /> */}
           {/* <Route path="/Kompetisi/itcomp/registrasi" element={<RegistrationForm />} /> */}
