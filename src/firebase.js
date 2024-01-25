@@ -1,28 +1,22 @@
-// src/firebase.js
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA65t8xguBNFbQk6sZLBAefnJaO_ODpnFk",
-    authDomain: "itcomp-e2a3a.firebaseapp.com",
-    projectId: "itcomp-e2a3a",
-    storageBucket: "itcomp-e2a3a.appspot.com",
-    messagingSenderId: "1074000179058",
-    appId: "1:1074000179058:web:5625d94e67fccb4c55b7eb",
+    apiKey: "AIzaSyA1s992WG4VpS6cIDXW8GIlhXib53zCdD4",
+    authDomain: "my-blog-701a7.firebaseapp.com",
+    databaseURL: "https://my-blog-701a7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "my-blog-701a7",
+    storageBucket: "my-blog-701a7.appspot.com",
+    messagingSenderId: "110187964212",
+    appId: "1:110187964212:web:daaa1133a7890f1af0a761",
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Auth instance
 const auth = getAuth(app);
-
-// Firestore instance
 const db = getFirestore(app);
-
-// Storage instance
 const storage = getStorage(app);
 
 export { auth, db, storage, app as firebase };

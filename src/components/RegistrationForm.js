@@ -137,7 +137,7 @@ const RegistrationForm = () => {
                             onChange={handleFileChange}
                             multiple
                             required
-                            accept=".jpg, .jpeg, .png" // Specify allowed file types
+                            accept=".jpg, .jpeg, .png"
                         />
                         <small className="text-muted">Maximum file size: 5 MB. Allowed file types: JPG, JPEG, PNG</small>
                     </div>
