@@ -1,24 +1,46 @@
+import React from "react";
 import '../App.css';
 
 const Kompetisi = () => {
-    const Uximage = '../img/ux.png';
+    const [loading, setLoading] = useState(true);
+    const Uximage = '../img/pc.png';
+    const Kertasimage = '../img/kertas.png';
+
+    useEffect(() => {
+        // Simulate loading delay
+        const timeout = setTimeout(() => {
+            setLoading(false);
+        }, 3000); // Adjust the delay as needed
+
+        // Cleanup the timeout on component unmount
+        return () => clearTimeout(timeout);
+    }, []);
     return (
         <div>
-            <section id="1">
-                <div>
-                    <h2 className="mt-4 text-center" style={{ color: 'orangered', fontSize: '40px' }}>
-                        IT COMP
-                        <br />
-                        Fusion of Art & Technology
-                    </h2>
-                    <div className="text-center">
-                        <a
-                            className="btn text-white shadow mt-4 fw-bold"
-                            style={{ background: 'orangered', textDecoration: 'none', padding: '10px 20px', borderRadius: '5px' }}
-                            href="https://forms.gle/bSkQHvPRVvLNkBjq7"
-                        >
-                            Daftar Sekarang
-                        </a>
+            {loading ? (
+                // Skeleton loading UI
+                <div className="text-center mt-5">
+                    <div className="spinner-border text-primary" role="status"></div>
+                    <p>Loading...</p>
+                </div>
+            ) : (
+                // Actual content
+                <>
+                    <section id="1">
+                        <div>
+                            <h2 className="mt-4 text-center" style={{ color: 'orangered', fontSize: '40px' }}>
+                                IT COMP
+                                <br />
+                                Fusion of Art & Technology
+                            </h2>
+                            <div className="text-center">
+                                <a
+                                    className="btn text-white shadow mt-4 fw-bold"
+                                    style={{ background: 'orangered', textDecoration: 'none', padding: '10px 20px', borderRadius: '5px' }}
+                                    href="https://forms.gle/bSkQHvPRVvLNkBjq7"
+                                >
+                                    Daftar Sekarang
+                                </a>
 
                     </div>
                 </div>
@@ -188,7 +210,7 @@ const Kompetisi = () => {
                     TimeLine perlombaan
                 </h2>
             </div>
-            <section id="8" className="mt-5 mb-5">
+            <section id="8" className="mt-5">
                 <div className="container">
                     <div className="card">
                         <div className="card-body">
@@ -207,7 +229,7 @@ const Kompetisi = () => {
                                 </li>
                                 <li className="timeline-item mb-5">
                                     <h5 className="fw-bold">Pengumuman pemenang Desain UI/UX & Olimpiade IT</h5>
-                                    <span className="text-muted">28 - 29 Februari 2024</span><br />
+                                    <span className="text-muted">28 - 29 Februari 2024</span><br/>
                                     <span className="text-muted">setelah seluruh peserta menyelesaikan presentasi </span>
                                 </li>
                             </ul>
