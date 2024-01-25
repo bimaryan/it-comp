@@ -4,6 +4,7 @@ import {
     MDBNavbar,
     MDBNavbarNav,
     MDBCollapse,
+    MDBNavbarBrand,
 } from 'mdb-react-ui-kit';
 
 const Navbar = () => {
@@ -11,9 +12,10 @@ const Navbar = () => {
     return (
         <MDBNavbar expand='lg'>
             <MDBContainer fluid>
-                <a className="nav-link text-center" href='/'>
+                <MDBNavbarBrand className="nav-link text-center" href='/'>
+                    <img src="../img/logo.jpeg" alt="Logo" height="30" />
                     Himatif Polindra
-                </a>
+                </MDBNavbarBrand>
 
                 <MDBCollapse navbar open={openNavRight}>
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>

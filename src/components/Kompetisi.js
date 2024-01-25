@@ -240,7 +240,7 @@ const Kompetisi = () => {
                     </section>
                 </>
             )
-            };
+            }
         </div>
     );
 }

@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 // import RegistrationForm from "./components/RegistrationForm";
 import Kompetisi from "./components/Kompetisi";
-import Admin from './components/Admin';
-import Home from './components/Home';
+// import Admin from './components/Admin';
+import Hacker from './components/Hacker';
 // import ComingSoon from './components/ComingSoon';
 import Login from './components/Login';
 import Footer from "./components/Footer";
@@ -22,8 +22,8 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Kompetisi />} />
-          <Route path="/bimz" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/hacker" element={<Hacker />} />
           {/* <Route path="/admin" element={<Admin />} /> */}
           {/* <Route path="/Kompetisi/itcomp/registrasi" element={<RegistrationForm />} /> */}
           <Route path="*" element={<NotFound />} />

@@ -1,0 +1,48 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #0F0F0F;
+    color: #0F0;
+    font-family: 'Courier New', monospace;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.hacker h1, .hacker p {
+    animation: blink 1s infinite;
+}
+
+.hacker img {
+    width: 200px;
+    height: 200px;
+}
+
+.hacker .matrix {
+    font-size: 2em;
+    letter-spacing: 0.6em;
+    animation: matrix 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes matrix {
+    0% { color: #0F0; }
+    50% { color: #000; }
+    100% { color: #0F0; }
+}
