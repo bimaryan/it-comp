@@ -13,7 +13,7 @@ const Kompetisi = () => {
         // Simulate loading delay
         const timeout = setTimeout(() => {
             setLoading(false);
-        }, 1000);
+        }, 500);
 
         ReactGA.pageview(window.location.pathname + window.location.search);
 
