@@ -19,6 +19,9 @@ const App = () => {
     <div>
       <Router>
         <Navbar />
+        <br/>
+        <br/>
+        <br/>
         <Routes>
           <Route path="/" element={<Kompetisi />} />
           <Route path="/login" element={<Login />} />
