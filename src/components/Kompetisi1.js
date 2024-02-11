@@ -1,6 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import '../App.css'
 
 const Kompetisi1 = () => {
+    const calculateTimeLeft = () => {
+        const difference = +new Date("2024-02-12") - +new Date();
+        let timeLeft = {};
+
+        if (difference > 0) {
+            timeLeft = {
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((difference / 1000 / 60) % 60),
+                seconds: Math.floor((difference / 1000) % 60)
+            };
+        }
+
+        return timeLeft;
+    };
+
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    });
+
+    const timerComponents = [];
+
+    Object.keys(timeLeft).forEach((interval) => {
+        if (!timeLeft[interval]) {
+            return;
+        }
+
+        timerComponents.push(
+            <span>
+                {timeLeft[interval]} {interval}{" "}
+            </span>
+        );
+    });
+
     return (
         <section id="1">
             <div className="mb-7">
@@ -10,11 +51,11 @@ const Kompetisi1 = () => {
                     <p style={{ fontSize: '30px' }}>Fusion of Art & Technology</p>
                 </h2>
                 <div className="text-center">
-                    <div>
+                    {/* <div>
                         <a
                             className="btn shadow mt-2 fw-bold"
                             style={{ background: 'white', color: '#ff5500' }}
-                            href="https://forms.gle/bSkQHvPRVvLNkBjq7"
+                            href="https://forms.gle/qCVVkMDAP9vfWFEN6"
                         >
                             Daftar Sekarang
                         </a>
@@ -27,6 +68,34 @@ const Kompetisi1 = () => {
                         >
                             Buku Panduan IT-Competitions 2024
                         </a>
+                    </div> */}
+                    <div className="mt-3 text-center">
+                        {timerComponents.length ? (
+                            <div className="countdown-box">
+                                {timerComponents}
+                            </div>
+                        ) : (
+                            <>
+                                <div>
+                                    <a
+                                        className="btn shadow mt-2 fw-bold"
+                                        style={{ background: 'white', color: '#ff5500' }}
+                                        href="https://forms.gle/qCVVkMDAP9vfWFEN6"
+                                    >
+                                        Daftar Sekarang
+                                    </a>
+                                </div>
+                                <div>
+                                    <a
+                                        className="btn shadow mt-2 fw-bold"
+                                        style={{ background: 'white', color: '#ff5500' }}
+                                        href="/"
+                                    >
+                                        Buku Panduan IT-Competitions 2024
+                                    </a>
+                                </div>
+                            </>
+                        )}
                     </div>
                 </div>
             </div>

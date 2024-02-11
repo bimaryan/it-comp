@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Kompetisi from "./components/Kompetisi";
 // import Admin from './components/Admin';
 // import ComingSoon from './components/ComingSoon';
-import Login from './components/Login';
+// import Login from './components/Login';
 import Footer from "./components/Footer";
 import NotFound from './components/NotFound';
 import ReactGA from 'react-ga';
@@ -24,7 +24,7 @@ const App = () => {
         <br/>
         <Routes>
           <Route path="/" element={<Kompetisi />} />
-          <Route path="/login" element={<Login />} />
+          {/* <Route path="/login" element={<Login />} /> */}
           {/* <Route path="/admin" element={<Admin />} /> */}
           {/* <Route path="/Kompetisi/itcomp/registrasi" element={<RegistrationForm />} /> */}
           <Route path="*" element={<NotFound />} />

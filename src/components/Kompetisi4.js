@@ -48,7 +48,7 @@ const Kompetisi4 = () => {
                         <ul className="timeline">
                             <li className="timeline-item mb-5">
                                 <h5 className="fw-bold">Open Registration</h5>
-                                <span className="text-muted">10 Januari 2024</span>
+                                <span className="text-muted">12 Februari 2024</span>
                             </li>
                             <li className="timeline-item mb-5">
                                 <h5 className="fw-bold">Close Registration and Technical meeting</h5>
