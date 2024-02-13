@@ -89,7 +89,7 @@ const Kompetisi1 = () => {
                                     <a
                                         className="btn shadow mt-2 fw-bold"
                                         style={{ background: 'white', color: '#ff5500' }}
-                                        href="/"
+                                        href="/Guide book IT COMPETITION.pdf"
                                     >
                                         Buku Panduan IT-Competitions 2024
                                     </a>
