@@ -16,7 +16,7 @@ const Kompetisi4 = () => {
                                     <b>Design UI/UX</b>
                                 </div>
                                 <div className="card-body">
-                                    Mengerjakan projek desain tampilan antar muka semenarik mungkin dan tidak mengandung unsur Sarah selama 3 jam pengerjaan dan dipresentasikan hasilnya di depan juri
+                                    Mengerjakan proyek desain tampilan antarmuka dan pengalaman pengguna semenarik mungkin. Karya tidak mengandung unsur SARA, setelah karya sudah selesai dikerjakan peserta akan mempresentasikan hasil karyanya.
                                 </div>
                             </div>
                             <div className="card">
@@ -24,15 +24,7 @@ const Kompetisi4 = () => {
                                     <b>Olimpiade IT</b>
                                 </div>
                                 <div className="card-body">
-                                    Mengerjakan soal pilihan ganda yang terdiri dari 50 soal dengan rincian sebagai berikut :
-                                    <ol>
-                                        <li>
-                                            Pengetahuan umum IT sebanyak 35 / 30 soal
-                                        </li>
-                                        <li>
-                                            Pengetahuan umum desain grafis sebanyak 15 / 20 soal
-                                        </li>
-                                    </ol>
+                                    Mengerjakan soal pilihan ganda yang berisi tentang Pengetahuan umum IT dan desain Grafis. Jika Benar mendapat nilai (+3), jika salah mendapat nilai (-1), dan jika tidak diisi maka tidak mendapat nilai (0)
                                 </div>
                             </div>
                         </div>
@@ -51,8 +43,12 @@ const Kompetisi4 = () => {
                                 <span className="text-muted">12 Februari 2024</span>
                             </li>
                             <li className="timeline-item mb-5">
-                                <h5 className="fw-bold">Close Registration and Technical meeting</h5>
-                                <span className="text-muted">19 Februari 2024</span>
+                                <h5 className="fw-bold">Close Registratio</h5>
+                                <span className="text-muted">24 Februari 2024</span>
+                            </li>
+                            <li className='timeline-item mb-5'>
+                                <h5 className='fw-bold'>Technical meeting (Online)</h5>
+                                <span className='test-muted'>25 Februari 2024</span>
                             </li>
                             <li className="timeline-item mb-5">
                                 <h5 className="fw-bold">Waktu pelaksanaan lomba</h5>
@@ -61,7 +57,7 @@ const Kompetisi4 = () => {
                             <li className="timeline-item mb-5">
                                 <h5 className="fw-bold">Pengumuman pemenang Desain UI/UX & Olimpiade IT</h5>
                                 <span className="text-muted">28 - 29 Februari 2024</span><br />
-                                <span className="text-muted">setelah seluruh peserta menyelesaikan presentasi </span>
+                                <span className="text-muted">setelah presentasi (Desain UI/UX) dan pengerjaan (Olimpiade IT) selesai di masing - masing hari pelaksanaannya.</span>
                             </li>
                         </ul>
                     </div>

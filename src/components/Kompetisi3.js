@@ -29,7 +29,7 @@ const Kompetisi3 = () => {
                 </h2>
                 <div className="card shadow mt-3">
                     <div className="card-body">
-                        Hadiah juara untuk IT COMP tahun 2023 adalah uang  tunai dengan rincian sebagai berikut :
+                        Hadiah juara untuk IT COMP tahun 2024 adalah uang  tunai dengan rincian sebagai berikut :
                         <div className="row row-cols-1 row-cols-md-2 justify-content-center mt-1">
                             <div className="col text-center">
                                 <p className="mb-3 mt-3 fw-bold">Design UI/UX</p>
