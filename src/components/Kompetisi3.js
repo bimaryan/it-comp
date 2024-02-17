@@ -39,7 +39,7 @@ const Kompetisi3 = () => {
                                             <i className="bi bi-trophy"></i> Juara 1
                                         </div>
                                         <div className="card-body">
-                                            Rp. 500.000 + sertifikat
+                                            Rp. 500.000 + sertifikat + plakat
                                         </div>
                                     </div>
                                     <div className="card">
@@ -47,7 +47,7 @@ const Kompetisi3 = () => {
                                             <i className="bi bi-trophy"></i> Juara 2
                                         </div>
                                         <div className="card-body">
-                                            Rp. 400.000 + sertifikat
+                                            Rp. 400.000 + sertifikat + plakat
                                         </div>
                                     </div>
                                     <div className="card">
@@ -55,7 +55,7 @@ const Kompetisi3 = () => {
                                             <i className="bi bi-trophy"></i> Juara 3
                                         </div>
                                         <div className="card-body">
-                                            Rp. 300.000 + sertifikat
+                                            Rp. 300.000 + sertifikat + plakat
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@ const Kompetisi3 = () => {
                                             <i className="bi bi-trophy"></i> Juara 1
                                         </div>
                                         <div className="card-body">
-                                            Rp. 350.000 + sertifikat
+                                            Rp. 350.000 + sertifikat + plakat
                                         </div>
                                     </div>
                                     <div className="card">
@@ -76,7 +76,7 @@ const Kompetisi3 = () => {
                                             <i className="bi bi-trophy"></i> Juara 2
                                         </div>
                                         <div className="card-body">
-                                            Rp. 250.000 + sertifikat
+                                            Rp. 250.000 + sertifikat + plakat
                                         </div>
                                     </div>
                                     <div className="card">
@@ -84,7 +84,7 @@ const Kompetisi3 = () => {
                                             <i className="bi bi-trophy"></i> Juara 3
                                         </div>
                                         <div className="card-body">
-                                            Rp. 200.000 + sertifikat
+                                            Rp. 200.000 + sertifikat + plakat
                                         </div>
                                     </div>
                                 </div>
