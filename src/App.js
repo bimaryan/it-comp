@@ -23,8 +23,8 @@ const App = () => {
         <br/>
         <br/>
         <Routes>
-          {/* <Route path="/" element={<Kompetisi />} /> */}
-          <Route path="/" element={<ComingSoon />} />
+          <Route path="/" element={<Kompetisi />} />
+          {/* <Route path="/" element={<ComingSoon />} /> */}
           {/* <Route path="/login" element={<Login />} /> */}
           {/* <Route path="/admin" element={<Admin />} /> */}
           {/* <Route path="/Kompetisi/itcomp/registrasi" element={<RegistrationForm />} /> */}
