@@ -4,7 +4,7 @@ const Navbar = () => {
     // const [openNavRight] = useState(false);
     return (
         <div className="fixed-top">
-            <nav className="navbar navbar-expand-lg rounded shadow">
+            <nav className="navbar navbar-expand-lg rounded shadow mb-3">
                 <div className="container-fluid">
                     <a className="navbar-brand rounded" href="/">
                         <div className="container">
