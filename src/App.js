@@ -21,7 +21,6 @@ const App = () => {
         <Navbar />
         <br/>
         <br/>
-        <br/>
         <Routes>
           {/*<Route path="/" element={<Kompetisi />} />*/}
           <Route path="/" element={<ComingSoon />} />
